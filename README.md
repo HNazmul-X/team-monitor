@@ -4,5 +4,4 @@
 ##### This is a Website of cuple of Sports club details
 **[Visite Website] (https://react-router-asnmnt.netlify.app/) **.
 
-<img width="300px" src="https://i.ibb.co/PjqRcb5/Screenshot-31.png" />
 
