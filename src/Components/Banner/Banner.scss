@@ -1,7 +1,17 @@
 .banner-covar{
     padding:6rem;
     text-align: center;
-    background:#678;
+    background-color:rgb(44, 44, 44);
+    background-blend-mode: soft-light;
     color:white;
     margin-bottom: 2rem;
+    background-repeat: no-repeat;
+    background-size:cover;
+    backdrop-filter: blur(5px);
+    background-position: center center;
+
+    &>img{
+        width:120px;
+    }
+
 }

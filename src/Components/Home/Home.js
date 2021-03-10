@@ -18,7 +18,7 @@ const Home = () => {
         <div>
             <Banner title="Sport Mania"></Banner>
             <Container>
-                <Grid container spacing={5} justify="center" align>
+                <Grid container spacing={5} justify="center" alignItems="center">
                     {allTeams.map((team) => {
                         return (
                             <Grid item sm={12} lg={4} md={6}>

@@ -8,3 +8,6 @@
     margin:0px;
     
 }
+.MuiContainer-root{
+    max-width: 1140px !important;
+}

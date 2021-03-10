@@ -1,0 +1,66 @@
+.team-details-covar {
+    background: #3d5afe;
+    color: white;
+    margin-bottom: 40px !important;
+    padding: 20px;
+    border-radius: 20px;
+    .team-details-desc {
+        h4{
+            margin-left:20px;
+        }
+        h4,
+        h6 {
+            margin-bottom: 15px;
+            font-weight: 400;
+            display:flex;
+            align-items: center;
+            .icon {
+                background: white;
+                color: #3d5afe;
+                padding: 5px;
+                width: 30px;
+                border-radius: 50%;
+                text-align: center;
+                margin-right:10px;
+            }
+        }
+    }
+    .team-details-img {
+        img{
+            width:100%;
+        }
+    }
+}
+.team-details-large-desc{
+    padding:20px;
+}
+.social-icons{
+    text-align: center;
+    padding:20px;
+    .icon{
+        font-size:40px;
+        width:50px;
+        text-align:center;
+        border-radius:50%;
+        padding:5px;
+        margin-right:10px;
+        color:white;
+        transition: 0.2s;
+        &.youtube{
+            background:red;
+        }
+        &.facebook{
+            background:rgb(13, 94, 199);
+        }
+        &.twitter{
+            background:rgb(0, 162, 255);
+        }
+        &.instagram{
+            background:palevioletred;
+        }
+        &:hover{
+            background:grey;
+            transform: translateY(-5px);
+        }
+    }
+}
