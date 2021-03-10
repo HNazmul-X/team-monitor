@@ -1,0 +1,33 @@
+.selection-from-container {
+    width:100%;
+    text-align:right;
+    display:flex;
+    align-items:center;
+    margin-bottom: 70px;
+    h3{
+        display:inline-block;
+    }
+    .selection-input {
+        width: 50%;
+        display:inline-block;
+        margin-left:auto;
+        background: #3d5afe;
+        border: none;
+        border-radius: 0px;
+        padding: 10px;
+        color: white;
+        font-size: 18px;
+        -webkit-appearance: none;
+        -moz-appearance: none;
+        appearance: none;
+        &:focus {
+            outline: none;
+        }
+        .selection-value{
+            border-bottom:1px solid grey;
+            padding:10px;
+            display:inline-block;
+            line-height:30px;
+        }
+    }
+}

@@ -15,7 +15,8 @@ import { Link } from "react-router-dom";
 const useStyles = makeStyles({
     root: {
         marginBottom: 50,
-        background: lightBlue[50]
+        background: lightBlue[50],
+        height: "100%"
     },
     cardButton: {
         width: "70%",
@@ -39,8 +40,10 @@ const useStyles = makeStyles({
 });
 
 const TeamCard = ({team}) => {
+
     const classes = useStyles();
-    const { strTeamBadge, strTeam, idTeam } = team;
+    const { strTeamBadge, strTeam, idTeam, strSport } = team;
+    
     return (
         <>
             <Grow in={true}>
@@ -52,13 +55,13 @@ const TeamCard = ({team}) => {
                                 {strTeam}
                             </Typography>
                             <Typography className={`${classes.cardDesc}`} variant="body2" textAlign="center" color="textSecondary" component="p">
-                                Sport Type : {"Football"}
+                                Sport Type : {strSport}
                             </Typography>
                         </CardContent>
                     </CardActionArea>
                     <CardActions textAlign="center">
-                        <Link className="link-button" to={`/details/${idTeam}`}>
-                            <Button  className={classes.cardButton} variant="outlined" color="primary">
+                        <Link onclick={() => document.title = (`welcome to ${strTeam} `)} className="link-button" to={`/details/${idTeam}`}>
+                            <Button className={classes.cardButton} variant="outlined" color="primary">
                                 Explore <ArrowRightAltIcon />
                             </Button>
                         </Link>

@@ -13,6 +13,7 @@ import FacebookIcon from "@material-ui/icons/Facebook";
 import InstagramIcon from "@material-ui/icons/Instagram";
 import TwitterIcon from "@material-ui/icons/Twitter";
 
+
 const TeamDetails = () => {
     const { teamId } = useParams();
     const [team, setTeam] = useState({});
@@ -25,17 +26,17 @@ const TeamDetails = () => {
             .then((data) => setTeam(data.teams[0]));
     }, [teamId]);
 
+    
     //distructue team object
     const { strTeamBanner, strTeamBadge, strGender, strSport, strCountry, strDescriptionEN, strYoutube, strInstagram, strTwitter, strFacebook, intFormedYear, strTeam, strTeamShort } = team;
+    document.title = `welcome to ${strTeam || ""}`
 
     return (
         <div>
             <Banner bannerBg={strTeamBanner} img={strTeamBadge}></Banner>
 
-
             <Container>
                 <Grid className="team-details-covar" container justify="center" alignItems="center" spacing={4}>
-
                     <Grid className="team-details-desc" item xs={12} md={6}>
                         <h4>{`${strTeam}  ${strTeamShort === null ? "" : ", " + strTeamShort}`}</h4>
                         <h6>
@@ -57,26 +58,23 @@ const TeamDetails = () => {
                     </Grid>
                 </Grid>
 
-
                 <Paper className="team-details-large-desc" elevation={3}>
                     <Typography> {strDescriptionEN}</Typography>
                     <div className="social-icons">
-                        <a rel="noreferrer" target="_blank" href={strYoutube ? `https://${strYoutube}` : "#"}>
+                        <a rel="noreferrer" target={strYoutube ? "_blank" : ""} href={strYoutube ? `https://${strYoutube}` : "#"}>
                             <YouTubeIcon className="icon youtube " />
                         </a>
-                        <a rel="noreferrer" target="_blank" href={`https://${strFacebook}`}>
+                        <a rel="noreferrer" target={strFacebook ? "_blank" : ""} href={strFacebook ? `https://${strFacebook}` : "#"}>
                             <FacebookIcon className="icon facebook " />
                         </a>
-                        <a rel="noreferrer" target="_blank" href={`https://${strInstagram}`}>
+                        <a rel="noreferrer" target={strInstagram ? "_blank" : ""} href={strInstagram ? `https://${strInstagram}` : "#"}>
                             <InstagramIcon className="icon instagram" />
                         </a>
-                        <a rel="noreferrer" target="_blank" href={`https://${strTwitter}`}>
+                        <a rel="noreferrer" target={strTwitter ? "_blank" : ""} href={strTwitter ? `https://${strTwitter}` : "#"}>
                             <TwitterIcon className="icon twitter" />
                         </a>
                     </div>
                 </Paper>
-
-
             </Container>
         </div>
     );
