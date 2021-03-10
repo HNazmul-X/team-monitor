@@ -39,11 +39,11 @@ const Navbar = () => {
                        <MenuIcon />
                    </IconButton>
                    <Typography variant="h6" className={classes.title}>
-                       Sports Mania
+                       Teams Monitor
                    </Typography>
                    <Button color="inherit">
-                       <Link ClassName={"nav-item"}>
-                           <Typography ClassName={classes.myText}>Login</Typography>
+                       <Link to="/" ClassName={"nav-item"}>
+                           <Typography ClassName={classes.myText}>Home</Typography>
                        </Link>
                    </Button>
                </Toolbar>

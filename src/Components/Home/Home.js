@@ -16,7 +16,7 @@ const Home = () => {
 
     return (
         <div>
-            <Banner title="Sport Mania"></Banner>
+            <Banner bannerBg={"https://images.unsplash.com/photo-1540747913346-19e32dc3e97e?ixid=MXwxMjA3fDB8MHxzZWFyY2h8Mnx8c3RhZGl1bXxlbnwwfHwwfA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80"} title="Teams Monitor"></Banner>
             <Container>
                 <Grid container spacing={5} justify="center" alignItems="center">
                     {allTeams.map((team) => {
