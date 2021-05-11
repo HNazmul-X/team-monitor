@@ -8,10 +8,11 @@
 #### Now a days, React router is a best routing component for making route in react app. Almost all website that made based on react router thay have used react router. Beacause there no alternative best sollution with out react router. That why I have used react-router-dom in this project. 
 
 <div align="center">
-    ----------
-    <button> Discoverd Feature in this project </button>
-    ----------
-    <hr/>
+    
+    
+## ***----- `Discoverd Feature in this project` -----***
+---
+
  </div>
  
  * ***Using React router Dom***
@@ -25,10 +26,11 @@
 
 #
 <div align="center">
-    ----------
-    <button>Using tools and Technology </button>
-    ----------
-    <hr/>
+    
+    
+## ***----- `Using tools and Technology` -----***
+---
+
  </div>
  
  * ***Javascript***
