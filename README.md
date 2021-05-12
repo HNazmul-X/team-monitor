@@ -10,7 +10,7 @@
 <div align="center">
     
     
-## ***----- `Discoverd Feature in this project` -----***
+## ***`Discoverd Feature in this project`***
 ---
 
  </div>
@@ -28,7 +28,7 @@
 <div align="center">
     
     
-## ***----- `Using tools and Technology` -----***
+## ***`Using tools and Technology`***
 ---
 
  </div>
@@ -43,9 +43,13 @@
  
 
 #
+<div align="center">
+    
+    
+### ***`Some Screen Shot of Website`***
+---
 
-
-
+ </div>
 <div align="center"><img width="300px"  src="https://i.ibb.co/PjqRcb5/Screenshot-31.png" /> </div>
 
 
@@ -53,10 +57,11 @@
 
 #
 <div align="center">
-    ----------
-    <button>About Me</button>
-    ----------
-    <hr/>
+ 
+
+## --- `About Me` ---
+---
+
  </div>
 
 #
@@ -68,4 +73,4 @@
 
 #### ***I am comfortable working with Html, CSS, Javascript React. Also with. Many libraries of React. For the high-quality design, I use material UIalso Bootstrap and many Front end Frameworks. As well as I am. comfortable with Firebase, Node.js for Backend and use MongoDB. For Database. I have implemented React map, Sass, Redux, and. many other libraries.***
 
-### [Checkout my Portfolio](https://web-hnazmul.web.app/)
+### [`Checkout my Portfolio`](https://web-hnazmul.web.app/)
